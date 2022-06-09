@@ -44,7 +44,7 @@ def iniciando():
 @app.route('/tienda')
 #contenedor para llamar a registro.html
 def tienda():
-    return render_template('tienda.html')
+    return render_template('/tienda.html')
 
 # ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ Registro de usuarios ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
 @app.route('/registro')

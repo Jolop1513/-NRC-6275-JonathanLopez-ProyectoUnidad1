@@ -58,37 +58,10 @@
   </div>
 
 <div>
-  <center> <h1 style=" font-family: fantasy;" >JL SHOP</h1></center>
+  <center> <h1 style=" font-family: fantasy;" >SECCIONES DE LA TIENDA</h1></center>
   <center> <h3 style=" font-family: platino;" >Vive la pasión del deporte</h3></center>
 </div>
-    <!--******************************************************************************+  -->
-    <!--                              CARRUSEL DE IMAGENES                        -->
-    <!--******************************************************************************+  -->
-   <!-- Uso del componente Carousel, permite ingresar imágenes como fondo de nuestra página-->
-  <!-- Es un conjunto donde se muestran varias imagenes que avanzan de manera sucesiva -->
-  <div>
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="{{url_for('static', filename='barca2.jpg')}}" alt="" class="d-block w-100" width="300px" height="600px">
-        </div>
-        <div class="carousel-item">
-          <img src="{{url_for('static', filename='city 2.jpg')}}" class="d-block w-100" alt="..." width="300px" height="600px">
-        </div>
-        <div class="carousel-item">
-          <img src="{{url_for('static', filename='madrid 2.jpg')}}" class="d-block w-100" alt="..." width="300px" height="600px">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
-      </button>
-    </div>
-  </div>
+
 
     <!-- Uso del blockquote, tiene referencia a un bloque de texto en la pagina-->
       <!-- a la vez permite citar otra fuente en forma de bloques que se haya tomado en cuenta-->
@@ -157,13 +130,46 @@
                 con todas las tallas 
                 y diseños de los mejores equipos del mundo.</p>
 
-            <a href="#" style=" font-family: georgia" class="btn btn-primary">Agregar al carrito</a>
+            <a href="#" style=" font-family: georgia" class="btn btn-primary">VER</a>
           </div>
         </div>
       </div>
     </div>
-  </div><br>
 
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title" style=" font-family: fantasy;" >Camiseta 1ª Juventus FC 2021/2022</h5>
+
+            <img src="{{url_for('static', filename='4.jpg')}}">
+            <h2><p class="card-text" style=" font-family: fantasy;">NIÑOS</p></h2>
+            <h4><p class="card-text" style=" font-family: platino;">Muévete con estilo</p></h4>
+            <p class="card-text"  style=" font-family: fantasy;">40,99$</p>
+            <p class="card-text"  style=" font-family: georgia;">Las mejores camisetas de fútbol para niños,
+                con todas las tallas y diseños de los mejores equipos del mundo.</p>
+            
+            <a href="#" style=" font-family: georgia" class="btn btn-primary">Agregar al carrito</a>
+          </div>
+        </div>
+      </div>
+
+  <div class="col-sm-6" class="p-3 mb-2 bg-secondary text-white">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style=" font-family: fantasy;" >Camiseta 3ª Inter Milan 2021/2022</h5>
+        <img src="{{url_for('static', filename='6.jpg')}}">
+        <h2><p class="card-text" style=" font-family: fantasy;">MUJERES</p></h2>
+        <h4><p class="card-text" style=" font-family: platino;">Diseño X Confort</p></h4>
+        <p class="card-text" style=" font-family: fantasy;">40,99$</p>
+        <p class="card-text"  style=" font-family: georgia;">Las mejores camisetas de fútbol para niños,
+          con todas las tallas y diseños de los mejores equipos del mundo.</p>
+
+        <a href="#" style=" font-family: georgia" class="btn btn-primary">Agregar al carrito</a>
+      </div>
+    </div>
+  </div>
+</div>
     <!--******************************************************************************+  -->
     <!--                              Creacion de NAV  -->
     <!--******************************************************************************+  -->
