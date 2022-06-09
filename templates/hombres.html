@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JL SHOP</title>
+ 
+ <!-- CSS only -->
+  <!-- Link de la plantilla de bootstrap-->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+  <!--cuerpo de la pagina -->
+
+<body>
+    <!--******************************************************************************+  -->
+    <!--                              CREACIÓN DE NAVBAR                               -->
+    <!--******************************************************************************+  -->
+     <!--Componente Navbar -->
+      <!--Consiste en el encabezado de la pagina, en donde muestra los servicios de la página -->
+  <div class="p-3 mb-2 bg-secondary text-white">
+    <nav class="navbar navbar-expand-lg bg-light">
+     <div class="container-fluid">
+       <a class="navbar-brand" style=" font-family: fantasy;" href="#">JL SHOP</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/tienda">TIENDA</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                ENTRAR
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <center><li><a class="dropdown-item" href="/login">INICIAR SESIÓN</a></li></center>
+                    <center><li><a class="dropdown-item" href="/registro">REGISTRARSE</a></li></center>
+                        <center><li><hr class="dropdown-divider"></li> ACCESOS </ul></center>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">CONTACTO</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Ingrese un producto" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button></b>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+<div>
+  <center> <h1 style=" font-family: fantasy;" >ROPA DEPORTIVA HOMBRES</h1></center>
+  <center> <h3 style=" font-family: platino;" >Vive la pasión del deporte</h3></center>
+</div>
+
+    <!--******************************************************************************+  -->
+    <!--                              Creacion de Botons   -->
+    <!--******************************************************************************+  -->
+    <center>
+        <div class="p-3 mb-2 bg-success text-black bg-opacity-25"><br>
+        <a href="/niños" style=" font-family: georgia" class="btn btn-primary">NIÑOS</a>
+        <a href="/hombres" style=" font-family: georgia" class="btn btn-primary">HOMBRES</a>
+        <a href="/mujeres" style=" font-family: georgia" class="btn btn-primary">MUJERES</a>
+    </center>
+    
+
+    <!-- Uso del blockquote, tiene referencia a un bloque de texto en la pagina-->
+      <!-- a la vez permite citar otra fuente en forma de bloques que se haya tomado en cuenta-->
+        <!--usualmente son en párrafos -->
+
+    <!--******************************************************************************+  -->
+    <!--                              Creacion de CARDS   -->
+    <!--******************************************************************************+  -->
+  <div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title" style=" font-family: fantasy;" >Camiseta 1ª Borussia Dortmund 2021/2022</h5>
+
+            <img src="{{url_for('static', filename='7.jpg')}}">
+            <h2><p class="card-text" style=" font-family: fantasy;">HOMBRES</p></h2>
+            <h4><p class="card-text" style=" font-family: platino;">Muévete con estilo</p></h4>
+            <p class="card-text"  style=" font-family: fantasy;">49,99$</p>
+            <p class="card-text"  style=" font-family: georgia;">Las mejores camisetas de fútbol para hombres, 
+                con todas las tallas 
+                y diseños de los mejores equipos del mundo.</p>
+            
+            <a href="#" style=" font-family: georgia" class="btn btn-primary">Agregar al carrito</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6" class="p-3 mb-2 bg-secondary text-white">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title" style=" font-family: fantasy;" >Camiseta 1ª Manchester City 2021/2022</h5>
+            <img src="{{url_for('static', filename='8.jpg')}}">
+            <h2><p class="card-text" style=" font-family: fantasy;">HOMBRES</p></h2>
+            <h4><p class="card-text" style=" font-family: platino;">Diseño X Confort</p></h4>
+            <p class="card-text" style=" font-family: fantasy;">49,99$</p>
+            <p class="card-text"  style=" font-family: georgia;">Las mejores camisetas de fútbol para hombres, 
+                con todas las tallas 
+                y diseños de los mejores equipos del mundo.</p>
+
+            <a href="#" style=" font-family: georgia" class="btn btn-primary">Agregar al carrito</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title" style=" font-family: fantasy;" >Camiseta 1ª Juventus FC 2021/2022</h5>
+
+            <img src="{{url_for('static', filename='11.jpg')}}">
+            <h2><p class="card-text" style=" font-family: fantasy;">HOMBRES</p></h2>
+            <h4><p class="card-text" style=" font-family: platino;">Muévete con estilo</p></h4>
+            <p class="card-text"  style=" font-family: fantasy;">40,99$</p>
+            <p class="card-text"  style=" font-family: georgia;">Las mejores camisetas de fútbol para hombres,
+                con todas las tallas
+                 y diseños de los mejores equipos del mundo.</p>
+            
+            <a href="#" style=" font-family: georgia" class="btn btn-primary">Agregar al carrito</a>
+          </div>
+        </div>
+      </div>
+
+  <div class="col-sm-6" class="p-3 mb-2 bg-secondary text-white">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style=" font-family: fantasy;" >Camiseta 3ª Inter Milan 2021/2022</h5>
+        <img src="{{url_for('static', filename='12.jpg')}}">
+        <h2><p class="card-text" style=" font-family: fantasy;">HOMBRES</p></h2>
+        <h4><p class="card-text" style=" font-family: platino;">Diseño X Confort</p></h4>
+        <p class="card-text" style=" font-family: fantasy;">40,99$</p>
+        <p class="card-text"  style=" font-family: georgia;">Las mejores camisetas de fútbol para hombres,
+          con todas las tallas 
+          y diseños de los mejores equipos del mundo.</p>
+
+        <a href="#" style=" font-family: georgia" class="btn btn-primary">Agregar al carrito</a>
+      </div>
+    </div>
+  </div>
+</div>
+    <!--******************************************************************************+  -->
+    <!--                              Creacion de NAV  -->
+    <!--******************************************************************************+  -->
+        <center>  
+        <div class="card-group" class="p-3 mb-2 bg-success text-black bg-opacity-25">
+            <div class="card" tyle="height: 100pxx;">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><br>
+                        <center> <h4 style=" font-family: fantasy;" >REDES SOCIALES</h4></center>
+                        <button type="submit"  style=" font-family: times new roman" class="btn btn-primary">FACEBOOK</button>
+                    </li><br>
+                    <li class="nav-item">
+                        <button type="submit"  style=" font-family: times new roman;" class="btn btn-info">TWITTER</button>
+                    </li><br>
+                        <li class="nav-item">
+                            <button type="submit" style=" font-family: times new roman;" class="btn btn-danger">YOUTUBE</button>
+                        </li><br>
+                        <a class="nav-link disabled">Copyright © Derechos Reservados - JL SHOP</a>
+                    </li>
+                </ul>
+            </div>
+        </center>
+      </div>
+   
+</body>
+</html>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
