@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JL SHOP</title>
+ 
+ <!-- CSS only -->
+  <!-- Link de la plantilla de bootstrap-->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+  <!--cuerpo de la pagina -->
+
+<body>
+    <!--******************************************************************************+  -->
+    <!--                              CREACIÓN DE NAVBAR                               -->
+    <!--******************************************************************************+  -->
+     <!--Componente Navbar -->
+      <!--Consiste en el encabezado de la pagina, en donde muestra los servicios de la página -->
+  <div class="p-3 mb-2 bg-secondary text-white">
+    <nav class="navbar navbar-expand-lg bg-light">
+     <div class="container-fluid">
+       <a class="navbar-brand" style=" font-family: fantasy;" href="#">JL SHOP</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/tienda">TIENDA</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                ENTRAR
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <center><li><a class="dropdown-item" href="/login">INICIAR SESIÓN</a></li></center>
+                    <center><li><a class="dropdown-item" href="/registro">REGISTRARSE</a></li></center>
+                        <center><li><hr class="dropdown-divider"></li> ACCESOS </ul></center>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">CONTACTO</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Ingrese un producto" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button></b>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+<div>
+  <center> <h1 style=" font-family: fantasy;" >JL SHOP</h1></center>
+  <center> <h3 style=" font-family: platino;" >Vive la pasión del deporte</h3></center>
+</div>
+    <!--******************************************************************************+  -->
+    <!--                              CARRUSEL DE IMAGENES                        -->
+    <!--******************************************************************************+  -->
+   <!-- Uso del componente Carousel, permite ingresar imágenes como fondo de nuestra página-->
+  <!-- Es un conjunto donde se muestran varias imagenes que avanzan de manera sucesiva -->
+  <div>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{{url_for('static', filename='barca2.jpg')}}" alt="" class="d-block w-100" width="300px" height="600px">
+        </div>
+        <div class="carousel-item">
+          <img src="{{url_for('static', filename='city 2.jpg')}}" class="d-block w-100" alt="..." width="300px" height="600px">
+        </div>
+        <div class="carousel-item">
+          <img src="{{url_for('static', filename='madrid 2.jpg')}}" class="d-block w-100" alt="..." width="300px" height="600px">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+
+    <!-- Uso del blockquote, tiene referencia a un bloque de texto en la pagina-->
+      <!-- a la vez permite citar otra fuente en forma de bloques que se haya tomado en cuenta-->
+        <!--usualmente son en párrafos -->
+
+
+    <!--******************************************************************************+  -->
+    <!--                              Creacion de Blockquote   -->
+    <!--******************************************************************************+  -->
+        <center> 
+            <div class="p-3 mb-2 bg-secondary text-white">
+              <blockquote cite='https://jjlopez17.wixsite.com/website-1'>
+                <p>
+                    <center> <h1 style=" font-family: fantasy;" align="center" width="300px">¿Quiénes Somos?</h1></center>
+                 <div style=" font-family: georgia;"> Nosotros somos una tienda online de camisetas de fútbol económicas , donde puedes 
+                     comprar tus camisetas mas baratas. Tenemos las camisetas fabricadas con las mejores 
+                     telas, de gran calidad y durabilidad, muy frescas para el verano y abrigadas para el
+                      invierno. Contamos con camisetas de todas las tallas, incluso si son tallas grandes
+                       especiales, en colores espectaculares, y modelos para mujeres, hombres y niños. <br>
+
+ 
+
+                    Compra tus camisas de fútbol en nuestro sitio web es muy fácil,  sencillo y económico.
+                     Navegas en el sitio, escoges la camiseta que más te guste y seleccionar tu talla. Luego,
+                      pasarás al carrito de compras y cuando termines de visitar toda la tienda, y hayas escogido
+                       todos los artículos que vas a comprar, pasas al carrito de compras de nuevo y realizas 
+                       el pago. Aceptamos todas las tarjetas de crédito más reconocidas, así que no tendrás 
+                       ningún problema, además tus datos estarán seguros, ya que utilizamos una conexión
+                        encriptada para tu tranquilidad. Te esperamos.</div>
+                </p>
+              </blockquote>
+            </div>
+
+    <!--******************************************************************************+  -->
+    <!--                              Creacion de CARDS   -->
+    <!--******************************************************************************+  -->
+  <div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title" style=" font-family: fantasy;" >Camiseta 1ª Real Madrid 2021/2022</h5>
+
+            <img src="{{url_for('static', filename='2.jpg')}}">
+            <h2><p class="card-text" style=" font-family: fantasy;">HOMBRES</p></h2>
+            <h4><p class="card-text" style=" font-family: platino;">Muévete con estilo</p></h4>
+            <p class="card-text"  style=" font-family: fantasy;">67,49$</p>
+            <p class="card-text"  style=" font-family: georgia;">Las mejores camisetas de fútbol para hombres, 
+                con todas las tallas 
+                y diseños de los mejores equipos del mundo.</p>
+            
+            <a href="#" style=" font-family: georgia" class="btn btn-primary">Agregar al carrito</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6" class="p-3 mb-2 bg-secondary text-white">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title" style=" font-family: fantasy;" >Camiseta 1ª FC Barcelona 2021/2022</h5>
+            <img src="{{url_for('static', filename='3.jpg')}}">
+            <h2><p class="card-text" style=" font-family: fantasy;">MUJERES</p></h2>
+            <h4><p class="card-text" style=" font-family: platino;">Diseño X Confort</p></h4>
+            <p class="card-text" style=" font-family: fantasy;">67,49$</p>
+            <p class="card-text"  style=" font-family: georgia;">Las mejores camisetas de fútbol para mujeres, 
+                con todas las tallas 
+                y diseños de los mejores equipos del mundo.</p>
+
+            <a href="#" style=" font-family: georgia" class="btn btn-primary">Agregar al carrito</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br>
+
+    <!--******************************************************************************+  -->
+    <!--                              Creacion de NAV  -->
+    <!--******************************************************************************+  -->
+        <center>  
+        <div class="card-group" class="p-3 mb-2 bg-success text-black bg-opacity-25">
+            <div class="card" tyle="height: 100pxx;">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><br>
+                        <center> <h4 style=" font-family: fantasy;" >REDES SOCIALES</h4></center>
+                        <button type="submit"  style=" font-family: times new roman" class="btn btn-primary">FACEBOOK</button>
+                    </li><br>
+                    <li class="nav-item">
+                        <button type="submit"  style=" font-family: times new roman;" class="btn btn-info">TWITTER</button>
+                    </li><br>
+                        <li class="nav-item">
+                            <button type="submit" style=" font-family: times new roman;" class="btn btn-danger">YOUTUBE</button>
+                        </li><br>
+                        <a class="nav-link disabled">Copyright © Derechos Reservados - JL SHOP</a>
+                    </li>
+                </ul>
+            </div>
+        </center>
+      </div>
+   
+</body>
+</html>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
