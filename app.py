@@ -40,7 +40,7 @@ def iniciando():
             
     else:
       return render_template('index.html')
-# ☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼
+
 @app.route('/tienda')
 #contenedor para llamar a registro.html
 def tienda():
