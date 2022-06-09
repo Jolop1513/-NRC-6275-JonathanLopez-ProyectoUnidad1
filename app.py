@@ -46,6 +46,27 @@ def iniciando():
 def tienda():
     return render_template('/tienda.html')
 
+@app.route('/niños')
+#contenedor para llamar a registro.html
+def niños():
+    return render_template('/niños.html')
+
+@app.route('/mujeres')
+#contenedor para llamar a registro.html
+def mujeres():
+    return render_template('/mujeres.html')
+
+
+@app.route('/hombres')
+#contenedor para llamar a registro.html
+def hombres():
+    return render_template('/hombres.html')
+
+@app.route('/contacto')
+#contenedor para llamar a registro.html
+def contacto():
+    return render_template('/contacto.html')
+
 # ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ Registro de usuarios ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
 @app.route('/registro')
 #contenedor para llamar a registro.html
